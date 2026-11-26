@@ -66,7 +66,6 @@ RXV_STORAGE_MODE=s3                 # production: do not use shared paths
 RXV_S3_BUCKET=<private artifact bucket>
 RXV_S3_REGION=<region>
 ```
-
 The Runner must enforce an egress-deny network policy, read-only base image, unprivileged UID, CPU/memory/pid limits, timeouts, and per-job temporary volumes. GitHub URLs should be fetched through a broker with allow-listed domains and commit SHA pinning.
 
 ## Public-service safeguards
@@ -86,3 +85,6 @@ The Runner must enforce an egress-deny network policy, read-only base image, unp
 ## Status
 
 This repository is a deployable foundation: polished public UI, API contract, local runner topology, and a functional R validation orchestration script. Before opening submissions to the internet, connect a real job queue/object store and apply the runner isolation controls listed above.
+
+## Author
+Vigneshwara Chandrasekaran
